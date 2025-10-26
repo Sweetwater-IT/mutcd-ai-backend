@@ -41,7 +41,7 @@ def analyze_with_grok(ocr_results: List[Dict]) -> List[Dict]:
         'Content-Type': 'application/json'
     }
     data = {
-        'model': 'grok-beta',  # Or 'grok-4-fast' if available
+        'model': 'grok-4-fast',  # Or 'grok-4-fast' if available
         'messages': [
             {
                 'role': 'system',
