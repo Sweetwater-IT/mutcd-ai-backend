@@ -22,7 +22,7 @@ app = FastAPI(title="MUTCD Sign OCR API", description="Extract and correct sign 
 # Add CORS middleware (update origins to match your Next.js domain, e.g., http://localhost:3000)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://your-nextjs-app.vercel.app"],  # Adjust as needed
+    allow_origins=["http://localhost:3000", "https://mutcd-ai.vercel.app"],  # Adjust as needed
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
